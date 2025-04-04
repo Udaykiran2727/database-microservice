@@ -12,15 +12,35 @@ public class Course {
     private String details;
     private String category;
     private Boolean available;
+	public String Image;
+	public Integer price;
+    
+    public String getImage() {
+		return Image;
+	}
 
-    // Constructors
+	public void setImage(String image) {
+		Image = image;
+	}
+
+	public Integer getPrice() {
+		return price;
+	}
+
+	public void setPrice(Integer price) {
+		this.price = price;
+	}
+
+	// Constructors
     public Course() {}
     
-    public Course(String title, String details, String category, Boolean available) {
+    public Course(String title, String details, String category, Boolean available,String image,Integer price) {
         this.title = title;
         this.details = details;
         this.category = category;
         this.available = available;
+        this.Image=image;
+        this.price=price;
     }
 
  

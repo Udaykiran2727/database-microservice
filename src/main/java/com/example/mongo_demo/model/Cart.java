@@ -12,7 +12,7 @@ public class Cart {
 	public String userId;
 	public String productId;
 	public String status;
-
+	
 	public Cart() {
 		super();
 		}
